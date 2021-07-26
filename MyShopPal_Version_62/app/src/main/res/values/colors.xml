@@ -3,6 +3,7 @@
     <color name="colorPrimary">#ED2173</color>
     <color name="colorPrimaryDark">#222934</color>
     <color name="colorAccent">#ED2173</color>
+    <color name="colorBlack">#000000</color>
 
     <color name="colorThemePink">#ED2173</color>
     <color name="colorThemeOrange">#F4442d</color>

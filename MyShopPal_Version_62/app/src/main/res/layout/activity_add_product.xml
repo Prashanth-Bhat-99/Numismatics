@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorBlack"
     tools:context=".ui.activities.AddProductActivity">
 
     <androidx.appcompat.widget.Toolbar
@@ -90,7 +91,7 @@
                     android:layout_height="wrap_content"
                     android:inputType="text"
                     android:padding="@dimen/et_padding"
-                    android:textColor="@color/colorPrimaryText"
+                    android:textColor="@color/colorWhite"
                     android:textSize="@dimen/et_textSize" />
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -114,7 +115,7 @@
                     android:layout_height="wrap_content"
                     android:inputType="text"
                     android:padding="@dimen/et_padding"
-                    android:textColor="@color/colorPrimaryText"
+                    android:textColor="@color/colorWhite"
                     android:textSize="@dimen/et_textSize" />
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -140,7 +141,7 @@
                     android:inputType="textMultiLine"
                     android:minLines="3"
                     android:padding="@dimen/et_padding"
-                    android:textColor="@color/colorPrimaryText"
+                    android:textColor="@color/colorWhite"
                     android:textSize="@dimen/et_textSize" />
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -164,7 +165,7 @@
                     android:layout_height="wrap_content"
                     android:inputType="number"
                     android:padding="@dimen/et_padding"
-                    android:textColor="@color/colorPrimaryText"
+                    android:textColor="@color/colorWhite"
                     android:textSize="@dimen/et_textSize" />
             </com.google.android.material.textfield.TextInputLayout>
 
