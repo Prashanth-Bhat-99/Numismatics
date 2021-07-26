@@ -59,7 +59,7 @@
 
 
     <string name="title_dashboard">Dashboard</string>
-    <string name="title_products">Products</string>
+    <string name="title_products">Coins</string>
     <string name="title_orders">Orders</string>
 
     <string name="please_click_back_again_to_exit">Please click back again to exit.</string>
@@ -73,43 +73,47 @@
 
     <string name="title_edit_profile">EDIT PROFILE</string>
 
-    <string name="action_add_product">Add Product</string>
+    <string name="action_add_product">Add Coin</string>
 
-    <string name="title_add_product">ADD PRODUCT</string>
-    <string name="et_hint_product_title">Product Title</string>
-    <string name="et_hint_product_price">Product Price ($)</string>
-    <string name="et_hint_product_description">Product Description</string>
-    <string name="et_hint_product_quantity">Product Quantity</string>
+    <string name="title_add_product">ADD COIN</string>
+    <string name="et_hint_product_title">Name of the Coin</string>
+    <string name="et_hint_product_price">Denomination</string>
+    <string name="et_hint_country">Country</string>
+    <string name="et_hint_continent">Continent</string>
+    <string name="et_hint_product_description">Coin Description</string>
+    <string name="et_hint_product_quantity">Year</string>
 
-    <string name="err_msg_select_product_image">Please select product image.</string>
-    <string name="err_msg_enter_product_title">Please enter product title.</string>
-    <string name="err_msg_enter_product_price">Please enter product price.</string>
-    <string name="err_msg_enter_product_description">Please enter product description.</string>
-    <string name="err_msg_enter_product_quantity">Please enter product quantity.</string>
+    <string name="err_msg_select_product_image">Please select Coin Image.</string>
+    <string name="err_msg_enter_product_title">Please enter Coin Title.</string>
+    <string name="err_msg_enter_product_price">Please enter Coin Denomination.</string>
+    <string name="err_msg_enter_product_description">Please enter Coin description.</string>
+    <string name="err_msg_enter_product_quantity">Please enter Coin Year.</string>
 
-    <string name="product_uploaded_success_message">Your product is uploaded successfully.</string>
-    <string name="no_products_added_yet">No products added yet!</string>
-    <string name="no_dashboard_item_found">No items found!</string>
+    <string name="product_uploaded_success_message">Your Coin is uploaded successfully.</string>
+    <string name="no_products_added_yet">No Coins added yet!</string>
+    <string name="no_dashboard_item_found">No Coins found!</string>
 
-    <string name="product_delete_success_message">Your product is deleted successfully.</string>
+    <string name="product_delete_success_message">Your Coin is deleted successfully.</string>
     <string name="delete_dialog_title">Delete</string>
-    <string name="delete_dialog_message">Are you sure you want to delete the product?</string>
+    <string name="delete_dialog_message">Are you sure you want to delete the Coin?</string>
     <string name="yes">Yes</string>
     <string name="no">No</string>
 
-    <string name="title_product_details">PRODUCT DETAILS</string>
-    <string name="lbl_product_description">Product Description</string>
-    <string name="lbl_product_details_stock_quantity">Stock Quantity</string>
+    <string name="title_product_details">COIN DETAILS</string>
+    <string name="lbl_product_description">Coin Description</string>
+    <string name="lbl_country">Country</string>
+    <string name="lbl_continent">Continent</string>
+    <string name="lbl_product_details_stock_quantity">Year</string>
 
-    <string name="btn_lbl_add_to_cart">ADD TO CART</string>
-    <string name="success_message_item_added_to_cart">Product is added to your cart.</string>
+    <string name="btn_lbl_add_to_cart">ADD TO FAVORITES</string>
+    <string name="success_message_item_added_to_cart">Coin is added to your Favorites.</string>
     <string name="btn_lbl_go_to_cart">GO TO CART</string>
 
-    <string name="title_my_cart">MY CART</string>
-    <string name="no_cart_item_found">No item found in cart!</string>
+    <string name="title_my_cart">MY FAVORITES</string>
+    <string name="no_cart_item_found">No coin found in cart!</string>
     <string name="lbl_subtotal">Subtotal</string>
     <string name="lbl_shipping_charge">Shipping Charge</string>
     <string name="lbl_total_amount">Total Amount</string>
     <string name="btn_lbl_checkout">Checkout</string>
-    <string name="action_cart">My Cart</string>
+    <string name="action_cart">Favorites</string>
 </resources>

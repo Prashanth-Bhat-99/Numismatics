@@ -72,7 +72,7 @@
                     android:layout_height="wrap_content"
                     android:textColor="@color/item_value_text_color"
                     android:textSize="@dimen/product_details_title_textSize"
-                    tools:text="Product Title" />
+                    tools:text="Name of the Coin" />
 
                 <com.securenumismatics.utils.MSPTextView
                     android:id="@+id/tv_product_details_price"
@@ -84,16 +84,72 @@
             </LinearLayout>
 
             <com.securenumismatics.utils.MSPTextViewBold
-                android:id="@+id/tv_product_details_label"
+                android:id="@+id/tv_country_label"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/product_details_label_margin"
-                android:text="@string/lbl_product_description"
+                android:text="@string/lbl_country"
                 android:textColor="@color/item_value_text_color"
                 android:textSize="@dimen/product_details_label_textSize"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/ll_product_details_title_price" />
+
+            <com.securenumismatics.utils.MSPTextView
+                android:id="@+id/tv_country_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/product_details_label_margin"
+                android:layout_marginEnd="@dimen/product_details_label_margin"
+                android:textColor="@color/colorSecondaryText"
+                android:textSize="@dimen/product_details_description_textSize"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_country_label"
+                tools:text="This is the Coin's description." />
+
+
+            <com.securenumismatics.utils.MSPTextViewBold
+                android:id="@+id/tv_continent_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/product_details_label_margin"
+                android:paddingTop="30px"
+                android:text="@string/lbl_continent"
+                android:textColor="@color/item_value_text_color"
+                android:textSize="@dimen/product_details_label_textSize"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_country_label" />
+
+
+            <com.securenumismatics.utils.MSPTextView
+                android:id="@+id/tv_continent_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/product_details_label_margin"
+                android:layout_marginEnd="@dimen/product_details_label_margin"
+                android:textColor="@color/colorSecondaryText"
+                android:textSize="@dimen/product_details_description_textSize"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_continent_label"
+                tools:text="This is the Coin's description." />
+
+
+
+            <com.securenumismatics.utils.MSPTextViewBold
+                android:id="@+id/tv_product_details_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/product_details_label_margin"
+                android:paddingTop="30px"
+                android:text="@string/lbl_product_description"
+                android:textColor="@color/item_value_text_color"
+                android:textSize="@dimen/product_details_label_textSize"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_continent_label" />
 
             <com.securenumismatics.utils.MSPTextView
                 android:id="@+id/tv_product_details_description"
@@ -106,7 +162,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/tv_product_details_label"
-                tools:text="This is product details description." />
+                tools:text="This is the Coin's description." />
 
             <LinearLayout
                 android:id="@+id/ll_product_details_quantity"
@@ -124,7 +180,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="@dimen/product_details_stock_quantity_paddingStartEnd"
-                    android:text="@string/lbl_product_details_stock_quantity"
+                    android:text="Year"
                     android:textColor="@color/item_value_text_color"
                     android:textSize="@dimen/product_details_label_textSize" />
 
@@ -133,6 +189,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/item_grey_border_background"
+                    android:text="5"
                     android:paddingStart="@dimen/product_details_stock_quantity_paddingStartEnd"
                     android:paddingTop="@dimen/product_details_stock_quantity_paddingTopBottom"
                     android:paddingEnd="@dimen/product_details_stock_quantity_paddingStartEnd"
