@@ -137,7 +137,9 @@ class ProductDetailsActivity : BaseActivity(), View.OnClickListener {
         )
 
         tv_product_details_title.text = product.title
-        tv_product_details_price.text = "$${product.price}"
+        tv_product_details_price.text = product.price
+        tv_country_description.text = product.country
+        tv_continent_description.text = product.continent
         tv_product_details_description.text = product.description
         tv_product_details_stock_quantity.text = product.stock_quantity
 
@@ -159,7 +161,7 @@ class ProductDetailsActivity : BaseActivity(), View.OnClickListener {
         hideProgressDialog()
 
         // Hide the AddToCart button if the item is already in the cart.
-        btn_add_to_cart.visibility = View.GONE
+        btn_add_to_cart.visibility = View.VISIBLE
         // Show the GoToCart button if the item is already in the cart. User can update the quantity from the cart list screen if he wants.
         btn_go_to_cart.visibility = View.VISIBLE
     }
@@ -178,8 +180,10 @@ class ProductDetailsActivity : BaseActivity(), View.OnClickListener {
         ).show()
 
         // Hide the AddToCart button if the item is already in the cart.
-        btn_add_to_cart.visibility = View.GONE
+        btn_add_to_cart.visibility = View.VISIBLE
         // Show the GoToCart button if the item is already in the cart. User can update the quantity from the cart list screen if he wants.
         btn_go_to_cart.visibility = View.VISIBLE
     }
 }
+
+

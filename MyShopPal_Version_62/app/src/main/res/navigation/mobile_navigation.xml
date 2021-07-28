@@ -24,7 +24,7 @@
 
     <fragment
         android:id="@+id/navigation_orders"
-        android:name="com.securenumismatics.ui.fragments.OrdersFragment"
+        android:name="com.securenumismatics.ui.fragments.CurrencyExchangeFragment"
         android:label="@string/title_orders"
         tools:layout="@layout/fragment_orders" />
 

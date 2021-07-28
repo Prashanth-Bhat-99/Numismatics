@@ -36,8 +36,10 @@
         android:scrollbars="none"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/toolbar_product_details_activity">
+        app:layout_constraintTop_toBottomOf="@id/toolbar_product_details_activity"
+        app:layout_constraintVertical_bias="0.0">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -80,7 +82,7 @@
                     android:layout_height="wrap_content"
                     android:textColor="@color/item_value_text_color"
                     android:textSize="@dimen/product_details_price_textSize"
-                    tools:text="$100" />
+                    tools:text="100" />
             </LinearLayout>
 
             <com.securenumismatics.utils.MSPTextViewBold
@@ -99,6 +101,7 @@
                 android:id="@+id/tv_country_description"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:paddingTop="5dp"
                 android:layout_marginStart="@dimen/product_details_label_margin"
                 android:layout_marginEnd="@dimen/product_details_label_margin"
                 android:textColor="@color/colorSecondaryText"
@@ -114,7 +117,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/product_details_label_margin"
-                android:paddingTop="30px"
+                android:paddingTop="20dp"
                 android:text="@string/lbl_continent"
                 android:textColor="@color/item_value_text_color"
                 android:textSize="@dimen/product_details_label_textSize"
@@ -130,6 +133,7 @@
                 android:layout_marginStart="@dimen/product_details_label_margin"
                 android:layout_marginEnd="@dimen/product_details_label_margin"
                 android:textColor="@color/colorSecondaryText"
+                android:paddingTop="5dp"
                 android:textSize="@dimen/product_details_description_textSize"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -137,13 +141,12 @@
                 tools:text="This is the Coin's description." />
 
 
-
             <com.securenumismatics.utils.MSPTextViewBold
                 android:id="@+id/tv_product_details_label"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/product_details_label_margin"
-                android:paddingTop="30px"
+                android:paddingTop="20dp"
                 android:text="@string/lbl_product_description"
                 android:textColor="@color/item_value_text_color"
                 android:textSize="@dimen/product_details_label_textSize"
@@ -155,6 +158,7 @@
                 android:id="@+id/tv_product_details_description"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:paddingTop="5dp"
                 android:layout_marginStart="@dimen/product_details_label_margin"
                 android:layout_marginEnd="@dimen/product_details_label_margin"
                 android:textColor="@color/colorSecondaryText"
@@ -180,7 +184,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="@dimen/product_details_stock_quantity_paddingStartEnd"
-                    android:text="Year"
+                    android:text="@string/lbl_year"
                     android:textColor="@color/item_value_text_color"
                     android:textSize="@dimen/product_details_label_textSize" />
 
@@ -189,11 +193,11 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/item_grey_border_background"
-                    android:text="5"
                     android:paddingStart="@dimen/product_details_stock_quantity_paddingStartEnd"
                     android:paddingTop="@dimen/product_details_stock_quantity_paddingTopBottom"
                     android:paddingEnd="@dimen/product_details_stock_quantity_paddingStartEnd"
                     android:paddingBottom="@dimen/product_details_stock_quantity_paddingTopBottom"
+                    android:text="@string/lbl_number"
                     android:textColor="@color/colorSecondaryText"
                     android:textSize="@dimen/product_details_stock_quantity_textSize"
                     android:textStyle="bold"
@@ -217,11 +221,11 @@
                 android:text="@string/btn_lbl_add_to_cart"
                 android:textColor="@android:color/white"
                 android:textSize="@dimen/btn_textSize"
-                android:visibility="gone"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/ll_product_details_quantity"
-                tools:visibility="visible" />
+                tools:visibility="visible"
+                tools:ignore="UnusedAttribute"/>
 
             <com.securenumismatics.utils.MSPButton
                 android:id="@+id/btn_go_to_cart"
@@ -240,11 +244,13 @@
                 android:text="@string/btn_lbl_go_to_cart"
                 android:textColor="@android:color/white"
                 android:textSize="@dimen/btn_textSize"
-                android:visibility="gone"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/btn_add_to_cart"
-                tools:visibility="visible" />
+                tools:visibility="visible"
+                tools:ignore="UnusedAttribute" />
+
+
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

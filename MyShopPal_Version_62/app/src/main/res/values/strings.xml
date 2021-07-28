@@ -105,6 +105,8 @@
     <string name="lbl_product_description">Coin Description</string>
     <string name="lbl_country">Country</string>
     <string name="lbl_continent">Continent</string>
+    <string name="lbl_year">Year</string>
+    <string name="lbl_number">5</string>
     <string name="lbl_product_details_stock_quantity">Year</string>
 
     <string name="btn_lbl_add_to_cart">ADD TO FAVORITES</string>
