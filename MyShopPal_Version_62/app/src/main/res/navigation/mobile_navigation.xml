@@ -18,8 +18,15 @@
         tools:layout="@layout/fragment_products" />
 
     <fragment
+        android:id="@+id/navigation_cart"
+        android:name="com.securenumismatics.ui.fragments.CurrencyExchangeFragment"
+        android:label="@string/title_products" />
+
+    <fragment
         android:id="@+id/navigation_orders"
         android:name="com.securenumismatics.ui.fragments.OrdersFragment"
         android:label="@string/title_orders"
         tools:layout="@layout/fragment_orders" />
+
+
 </navigation>
